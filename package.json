@@ -1,0 +1,26 @@
+{
+  "name": "mongodb_queries",
+  "version": "1.0.0",
+  "description": "Some common mongodb queries",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js --ignore client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Ofili",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.19",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}
