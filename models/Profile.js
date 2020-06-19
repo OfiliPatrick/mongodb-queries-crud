@@ -9,13 +9,16 @@ const profileSchema = new Schema({
 
   company: {
     type: String,
+    required: true
   },
   location: {
     type: String,
+    required: true
   },
 
   skills: {
     type: [String],
+    required: true
   },
 
   date: {

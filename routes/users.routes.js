@@ -57,12 +57,17 @@ router.post("/login", (req, res) => {
             email: user.email,
           };
 
-          jwt.sign(userDetsDb, SECRET, { expiresIn: 5000 }, (err, token) => {
-            res.status(200).json({
-              request_success: true,
-              token: "Bearer " + token,
-            });
-          });
+          jwt.sign(
+            userDetsDb,
+            SECRET,
+            { expiresIn: 100000000 },
+            (err, token) => {
+              res.status(200).json({
+                request_success: true,
+                token: "Bearer " + token,
+              });
+            }
+          );
         } else {
           return res.status(400).json("wrong password");
         }
